@@ -187,7 +187,7 @@ end
 
 def big_shoe_rebounds
   players.each do |key|
-    key.each do |stat, value|
+    key.each do |stats, value|
       binding.pry
       return key[:rebounds]
     end
