@@ -133,6 +133,8 @@ end
 
 def num_points_scored(player_name)
   players.each do |key|
-    binding.pry
+    key[:player_name] == player_name
+      return key[:points]
+    #binding.pry
   end
 end
