@@ -139,6 +139,8 @@ def team(team_name)
     game_hash[:home]
   when game_hash[:away][:team_name]
     game_hash[:away]
+  end
+end
 
 def num_points_scored(player_name)
   players.each do |key|
@@ -172,6 +174,5 @@ end
 def player_numbers(team_name)
   team(team_name)[:players].map do |key, value|
     value[:number]
-  end
   end
 end
