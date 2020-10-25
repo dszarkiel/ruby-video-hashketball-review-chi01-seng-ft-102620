@@ -185,7 +185,7 @@ def player_stats(player_name)
   end
 end
 
-def player_stats(player_name)
+def big_shoe_rebounds(player_name)
   players.each do |key|
     if key[:shoe].max
       return key[:rebounds]
