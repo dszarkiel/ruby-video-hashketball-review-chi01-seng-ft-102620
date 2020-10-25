@@ -146,3 +146,13 @@ def shoe_size(player_name)
     end
   end
 end
+
+def team_colors(team_name)
+  case team_name
+    when "Brooklyn Nets"
+      game_hash[:home][:colors]
+    when "Charlotte Hornets"
+      game_hash[:away][:colors]
+    end
+  end
+    
