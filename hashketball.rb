@@ -134,4 +134,5 @@ end
 def num_points_scored(player_name)
   players.each do |key|
     binding.pry
+  end
 end
