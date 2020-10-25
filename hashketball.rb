@@ -130,7 +130,7 @@ end
 def players
   game_hash[:home][:players].concat(game_hash[:away][:players])
 end
-#binding.pry
+binding.pry
 def num_points_scored player_name
   players[player_name][:points]
 end
