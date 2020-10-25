@@ -127,9 +127,18 @@ def game_hash
   }
 end
 
+#Helper Method Num:1
 def players
   game_hash[:home][:players].concat(game_hash[:away][:players])
 end
+
+#Helper Method Num:2
+def team(team_name)
+  case team_name
+  when game_hash[:home][:team_name]
+    game_hash[:home]
+  when game_hash[:away][:team_name]
+    game_hash[:away]    
 
 def num_points_scored(player_name)
   players.each do |key|
