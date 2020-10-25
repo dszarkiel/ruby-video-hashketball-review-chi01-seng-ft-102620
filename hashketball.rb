@@ -1,5 +1,5 @@
 # Write your code below game_hash
-
+require 'pry'
 def game_hash
   {
     home: {
@@ -129,4 +129,9 @@ end
 
 def players
   game_hash[:home][:players].merge(game_hash[:home][:players])
+  binding.pry
+end
+
+def num_points_scored(player_name)
+  players[player_name][:points]
 end
