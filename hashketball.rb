@@ -187,9 +187,5 @@ end
 
 def big_shoe_rebounds
   players.max_by{|k| k[:shoe]} [:rebounds]
-
-      return key[:rebounds]
-    end
-    end
   end
 end
