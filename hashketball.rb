@@ -159,3 +159,9 @@ def team_colors(team_name)
 def team_names
   [game_hash[:home][:team_name], game_hash[:away][:team_name]]
 end
+
+def player_numbers(team_name)
+  team(team_name)[:players].map do |key, value|
+    binding.pry
+  end
+end
