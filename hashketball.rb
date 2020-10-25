@@ -188,7 +188,8 @@ end
 def big_shoe_rebounds
   players.each do |key|
     key.each do |stats, value|
-      binding.pry
+      if stats == :shoe
+        value.max
       return key[:rebounds]
     end
   end
